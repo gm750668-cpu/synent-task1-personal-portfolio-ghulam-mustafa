@@ -14,7 +14,6 @@ body {
     background: #f4f6f8;
     color: #222;
     line-height: 1.6;
-    overflow-x: hidden;
 }
 
 
@@ -81,6 +80,21 @@ body {
 
 .nav-links a:hover::after {
     width: 100%;
+}
+
+
+/* =========================
+   Keyboard Accessibility
+========================= */
+
+.nav-links a:focus-visible,
+.logo:focus-visible,
+.primary-btn:focus-visible,
+.secondary-btn:focus-visible,
+.project-btn:focus-visible,
+.contact-item:focus-visible {
+    outline: 3px solid #93c5fd;
+    outline-offset: 3px;
 }
 
 
